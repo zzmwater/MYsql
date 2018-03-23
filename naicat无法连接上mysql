@@ -1,0 +1,6 @@
+ 1：mysql -u root -p
+ 2：use mysql;
+ 3：update user set host = '%' where user = 'root';//////////////////这一句执行完可能会报错，不用管它。
+ 4：FLUSH PRIVILEGES;
+ 
+ 注: 第四步是刷新MySQL的权限相关表，
